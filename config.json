@@ -23,7 +23,7 @@
          "searchable":1,
          "quickSearch":0,
          "filterable":0,
-         "changeable":0
+         "changeable":1
       },
       {
          "key":"Qile优视频",
@@ -42,7 +42,7 @@
          "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_jieyingshi.py",
          "searchable":1,
          "filterable":0,
-         "changeable":0
+         "changeable":1
       },
       {
          "key":"沐辰爱瓜TV",
@@ -51,7 +51,7 @@
          "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_aigua.py",
          "searchable":1,
          "filterable":0,
-         "changeable":0
+         "changeable":1
       },
       {
          "key":"Cori爱壹帆",
@@ -105,7 +105,7 @@
          "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_jianpian.py",
          "searchable":1,
          "filterable":0,
-         "changeable":0
+         "changeable":1
       },
       {
          "key":"嗷呜小苹果",
@@ -114,7 +114,16 @@
          "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_pingguo.py",
          "searchable":1,
          "filterable":0,
-         "changeable":0
+         "changeable":1
+      },
+      {
+         "key":"嗷呜剧爸爸",
+         "name":"嗷呜剧爸爸",
+         "type":3,
+         "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_jubaba.py",
+         "searchable":1,
+         "filterable":0,
+         "changeable":1
       }
    ],
    "lives":[
