@@ -7,7 +7,7 @@
          "name":"黑木影视",
          "type":1,
          "api":"https://heimuer.ggff.net/api.php/tvbox",
-		 "playUrl":"json:https://heimuer.ggff.net/noads.php?url=",
+         "playUrl":"json:https://heimuer.ggff.net/noads.php?url=",
          "searchable":1,
          "quickSearch":1,
          "filterable":0,
@@ -126,14 +126,15 @@
          "changeable":1
       },
       {
-        "key": "Wexduboku",
-        "name": "独播库",
-        "type": 3,
-        "api": "csp_WexdubokuGuard",
-        "jar": "https://raw.githubusercontent.com/cyalias/mytvs-github/387dcc33d090319ec8ef3b70f475a8a0fe0ae070/tvboxqq/%E7%8E%8B%E4%BA%8C%E5%B0%8F/spider.jar",
-        "searchable": 1,
-        "changeable": 1
-    }
+         "key":"独播库",
+         "name":"独播库",
+         "type":3,
+         "api":"csp_WexdubokuGuard",
+         "jar":"https://raw.githubusercontent.com/cyalias/mytvs-github/387dcc33d090319ec8ef3b70f475a8a0fe0ae070/tvboxqq/%E7%8E%8B%E4%BA%8C%E5%B0%8F/spider.jar",
+         "searchable":1,
+         "filterable":0,
+         "changeable":1
+      }
    ],
    "lives":[
       {
