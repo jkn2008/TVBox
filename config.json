@@ -124,7 +124,16 @@
          "searchable":1,
          "filterable":0,
          "changeable":1
-      }
+      },
+      {
+        "key": "Wexduboku",
+        "name": "独播库",
+        "type": 3,
+        "api": "csp_WexdubokuGuard",
+        "jar": "https://raw.githubusercontent.com/cyalias/mytvs-github/387dcc33d090319ec8ef3b70f475a8a0fe0ae070/tvboxqq/%E7%8E%8B%E4%BA%8C%E5%B0%8F/spider.jar",
+        "searchable": 1,
+        "changeable": 1
+    }
    ],
    "lives":[
       {
