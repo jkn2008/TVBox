@@ -16,10 +16,7 @@ from base.spider import Spider
 class Spider(Spider):
 
     def init(self, extend=""):
-        self.host = random.choice([
-            "https://www.jubaba.cc/",
-            "https://www.dandantu.cc/"
-        ])
+        self.host = "https://www.jubaba.cc/"
         self.headers.update({
             'referer': f'{self.host}/',
             'origin': self.host,
