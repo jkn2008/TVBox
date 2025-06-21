@@ -135,15 +135,6 @@
             }
          },
          "jar":"https://github.com/CatVodSpider-GM/SFW-Spiders/raw/refs/heads/main/Spiders-Lib/GM.jar"
-      },
-      {
-         "key":"嗷呜小红",
-         "name":"嗷呜小红",
-         "type":3,
-         "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_xiaohong.py",
-         "searchable":1,
-         "filterable":0,
-         "changeable":1
       }
    ],
    "lives":[
