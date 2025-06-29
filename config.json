@@ -135,27 +135,25 @@
             }
          },
          "jar":"https://github.com/CatVodSpider-GM/SFW-Spiders/raw/refs/heads/main/Spiders-Lib/GM.jar"
+      },
+      {
+         "key":"老张直播频道",
+         "name":"老张直播频道",
+         "type":4,
+         "api":"http://zhangqun66.com/zh/2241-2.php",
+         "searchable":1,
+         "changeable":0,
+         "ext":"1,2,3"
       }
    ],
    "lives":[
       {
          "name":"斯玛特全球直播",
-         "type":3,
-         "api":"https://raw.githubusercontent.com/doube-ba/Sub/refs/heads/main/live/live_smt.py",
-         "ext":{
-            
-         }
+         "url":"https://tvbot.dpdns.org/tv.m3u"
       },
       {
-         "name":"BeeSport直播",
-         "type":3,
-         "api":"https://json.doube.eu.org/python/live_beesport.py",
-         "ext":{
-            
-         },
-         "header":{
-            "Referer":"https://p.m82xg4z0cdbz7.com/"
-         }
+         "name":"香港直播",
+         "url":"https://tvbot.dpdns.org/nowTV.m3u"
       }
    ],
    "doh":[
