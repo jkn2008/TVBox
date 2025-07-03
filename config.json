@@ -84,12 +84,10 @@
       {
          "key":"荐片",
          "name":"荐片",
-         "type":3,
+         "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_jianpian.py",
          "searchable":1,
-         "changeable":1,
-         "api":"csp_Jianpian",
-         "playerType":2,
-         "filterable":1
+         "filterable":0,
+         "changeable":1
       },
       {
          "key":"Cori爱壹帆",
