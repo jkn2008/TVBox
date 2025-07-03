@@ -84,6 +84,7 @@
       {
          "key":"荐片",
          "name":"荐片",
+         "type":3,
          "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_jianpian.py",
          "searchable":1,
          "filterable":0,
