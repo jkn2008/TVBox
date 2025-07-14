@@ -19,7 +19,7 @@
          "key":"沐辰爱瓜TV",
          "name":"沐辰爱瓜TV",
          "type":3,
-         "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_aigua.py",
+         "api":"./py/py_aigua.py",
          "searchable":1,
          "filterable":0,
          "changeable":1
@@ -28,16 +28,23 @@
          "key":"嗷呜小苹果",
          "name":"嗷呜小苹果",
          "type":3,
-         "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_pingguo.py",
+         "api":"./py/py_pingguo.py",
          "searchable":1,
          "filterable":0,
          "changeable":1
       },
       {
+         "key":"瓜子影视",
+         "name":"瓜子影视",
+         "type":3,
+         "api":"./api/drpy2.min.js",
+         "ext":"./js/瓜子.js"
+      },
+      {
          "key":"嗷呜金牌影院",
          "name":"嗷呜金牌影院",
          "type":3,
-         "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_jinpai.py",
+         "api":"./py/py_jinpai.py",
          "searchable":1,
          "filterable":0,
          "changeable":1
@@ -46,7 +53,7 @@
          "key":"嗷呜剧爸爸",
          "name":"嗷呜剧爸爸",
          "type":3,
-         "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_jubaba.py",
+         "api":"./py/py_jubaba.py",
          "searchable":1,
          "filterable":0,
          "changeable":1
@@ -85,7 +92,7 @@
          "key":"荐片",
          "name":"荐片",
          "type":3,
-         "api":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/py_jianpian.py",
+         "api":"./py/py_jianpian.py",
          "searchable":1,
          "filterable":0,
          "changeable":1
@@ -148,11 +155,18 @@
    "lives":[
       {
          "name":"斯玛特全球直播",
-         "url":"https://tvbot.dpdns.org/tv.m3u"
+         "url":"./tv.m3u"
       },
       {
-         "name":"香港直播",
-         "url":"https://tvbot.dpdns.org/nowTV.m3u"
+         "name":"BeeSport直播",
+         "type":3,
+         "api":"./py/live_beesports.py",
+         "ext":{
+            
+         },
+         "header":{
+            "Referer":"https://p.m82xg4z0cdbz7.com/"
+         }
       }
    ],
    "doh":[
