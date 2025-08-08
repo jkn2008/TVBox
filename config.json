@@ -3,32 +3,19 @@
    "wallpaper":"https://深色壁纸.xxooo.cf/",
    "sites":[
       {
-         "key":"黑木影视",
-         "name":"黑木影视",
-         "type":1,
-         "api":"https://heimuer.ggff.net/api.php/tvbox",
-         "playUrl":"json:https://heimuer.ggff.net/noads.php?url=",
+         "key":"嗷呜小苹果",
+         "name":"嗷呜小苹果",
+         "type":3,
+         "api":"./py/py_pingguo.py",
          "searchable":1,
-         "quickSearch":1,
          "filterable":0,
-         "header":{
-            "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-         }
+         "changeable":1
       },
       {
          "key":"沐辰爱瓜TV",
          "name":"沐辰爱瓜TV",
          "type":3,
          "api":"./py/py_aigua.py",
-         "searchable":1,
-         "filterable":0,
-         "changeable":1
-      },
-      {
-         "key":"嗷呜小苹果",
-         "name":"嗷呜小苹果",
-         "type":3,
-         "api":"./py/py_pingguo.py",
          "searchable":1,
          "filterable":0,
          "changeable":1
