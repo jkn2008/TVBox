@@ -3,6 +3,15 @@
    "wallpaper":"https://深色壁纸.xxooo.cf/",
    "sites":[
       {
+         "key":"天堂影视",
+         "name":"天堂影视",
+         "type":1,
+         "api":"https://heimuer.ggff.net/api.php/tvbox",
+         "searchable":1,
+         "quickSearch":1,
+         "filterable":0
+      },
+      {
          "key":"嗷呜小苹果",
          "name":"嗷呜小苹果",
          "type":3,
