@@ -14,18 +14,20 @@
       {
          "key":"嗷呜小苹果",
          "name":"嗷呜小苹果",
-         "type":3,
-         "api":"./py/py_pingguo.py",
+         "type":4,
+         "api":"https://tvbot.ggff.net/pingguo",
          "searchable":1,
+         "quickSearch":0,
          "filterable":0,
          "changeable":1
       },
       {
-         "key":"沐辰爱瓜TV",
-         "name":"沐辰爱瓜TV",
-         "type":3,
-         "api":"./py/py_aigua.py",
+         "key":"嗷呜爱瓜TV",
+         "name":"嗷呜爱瓜TV",
+         "type":4,
+         "api":"https://tvbot.ggff.net/aigua",
          "searchable":1,
+         "quickSearch":0,
          "filterable":0,
          "changeable":1
       },
