@@ -3,6 +3,15 @@
    "wallpaper":"https://深色壁纸.xxooo.cf/",
    "sites":[
       {
+         "key":"天堂影视",
+         "name":"天堂影视",
+         "type":1,
+         "api":"https://heimuer.ggff.net/api.php/tvbox",
+         "searchable":1,
+         "quickSearch":1,
+         "filterable":0
+      },
+      {
          "key":"嗷呜小苹果",
          "name":"嗷呜小苹果",
          "type":3,
@@ -32,15 +41,6 @@
          "name":"嗷呜金牌影院",
          "type":3,
          "api":"./py/py_jinpai.py",
-         "searchable":1,
-         "filterable":0,
-         "changeable":1
-      },
-      {
-         "key":"嗷呜剧爸爸",
-         "name":"嗷呜剧爸爸",
-         "type":3,
-         "api":"./py/py_jubaba.py",
          "searchable":1,
          "filterable":0,
          "changeable":1
@@ -127,15 +127,6 @@
          "searchable":1,
          "changeable":0,
          "ext":"1,2,3"
-      },
-      {
-         "key":"厂长",
-         "name":"厂长",
-         "type":3,
-         "api":"./py/py_cz.py",
-         "searchable":1,
-         "filterable":0,
-         "changeable":1
       }
    ],
    "lives":[
