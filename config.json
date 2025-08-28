@@ -3,33 +3,30 @@
    "wallpaper":"https://深色壁纸.xxooo.cf/",
    "sites":[
       {
+         "key":"豆瓣首页",
+         "name":"豆瓣首页",
+         "type":4,
+         "api":"https://tvbot.ggff.net/douban",
+         "quickserch":0,
+         "searchable":0
+      },
+      {
          "key":"天堂影视",
          "name":"天堂影视",
          "type":1,
-         "api":"https://heimuer.ggff.net/api.php/tvbox",
-         "searchable":1,
-         "quickSearch":1,
-         "filterable":0
+         "api":"https://heimuer.ggff.net/api.php/tvbox"
       },
       {
          "key":"嗷呜小苹果",
          "name":"嗷呜小苹果",
          "type":4,
-         "api":"https://tvbot.ggff.net/pingguo",
-         "searchable":1,
-         "quickSearch":0,
-         "filterable":0,
-         "changeable":1
+         "api":"https://tvbot.ggff.net/pingguo"
       },
       {
          "key":"嗷呜爱瓜TV",
          "name":"嗷呜爱瓜TV",
          "type":4,
-         "api":"https://tvbot.ggff.net/aigua",
-         "searchable":1,
-         "quickSearch":0,
-         "filterable":0,
-         "changeable":1
+         "api":"https://tvbot.ggff.net/aigua"
       },
       {
          "key":"瓜子影视",
@@ -42,27 +39,18 @@
          "key":"嗷呜金牌影院",
          "name":"嗷呜金牌影院",
          "type":3,
-         "api":"./py/py_jinpai.py",
-         "searchable":1,
-         "filterable":0,
-         "changeable":1
+         "api":"./py/py_jinpai.py"
       },
       {
          "key":"沐辰欧乐影院",
          "name":"沐辰欧乐影院",
          "type":4,
-         "api":"https://py.doube.eu.org/spider?site=OleVod",
-         "searchable":1,
-         "quickSearch":0,
-         "filterable":0,
-         "changeable":1
+         "api":"https://py.doube.eu.org/spider?site=OleVod"
       },
       {
          "key":"Qile优视频",
          "name":"Qile优视频",
          "type":3,
-         "searchable":1,
-         "changeable":1,
          "api":"csp_Uvod",
          "playerType":2,
          "filterable":1
@@ -71,18 +59,12 @@
          "key":"荐片",
          "name":"荐片",
          "type":3,
-         "api":"./py/py_jianpian.py",
-         "searchable":1,
-         "filterable":0,
-         "changeable":1
+         "api":"./py/py_jianpian.py"
       },
       {
          "key":"Cori爱壹帆",
          "name":"Cori爱壹帆",
          "type":3,
-         "searchable":1,
-         "changeable":1,
-         "quickSearch":0,
          "style":{
             "type":"rect",
             "ratio":0.75
@@ -126,7 +108,8 @@
          "name":"老张直播频道",
          "type":4,
          "api":"http://zhangqun66.com/zh/2241-2.php",
-         "searchable":1,
+         "searchable":0,
+         "quickserch":0,
          "changeable":0,
          "ext":"1,2,3"
       }
