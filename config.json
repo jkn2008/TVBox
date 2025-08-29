@@ -129,8 +129,8 @@
         "header":{"User-Agent":"okHttp/Mod-1.1.0"}
       },
       {
-         "name":"斯玛特全球直播",
-         "url":"./tv.m3u"
+         "name":"咪咕直播",
+         "url":"https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt"
       },
       {
          "name":"BeeSport直播",
