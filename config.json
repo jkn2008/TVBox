@@ -56,6 +56,12 @@
          "filterable":1
       },
       {
+         "key":"独播库",
+         "name":"独播库",
+         "type":4,
+         "api":"https://tvbot.ggff.net/duboku"
+      },
+      {
          "key":"荐片",
          "name":"荐片",
          "type":3,
@@ -112,12 +118,6 @@
          "quickserch":0,
          "changeable":0,
          "ext":"1,2,3"
-      },
-      {
-         "key":"独播库仅搜索",
-         "name":"独播库仅搜索",
-         "type":4,
-         "api":"https://tvbot.ggff.net/duboku"
       }
    ],
    "lives":[
