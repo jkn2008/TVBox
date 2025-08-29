@@ -112,6 +112,12 @@
          "quickserch":0,
          "changeable":0,
          "ext":"1,2,3"
+      },
+      {
+         "key":"独播库仅搜索",
+         "name":"独播库仅搜索",
+         "type":4,
+         "api":"https://tvbot.ggff.net/duboku"
       }
    ],
    "lives":[
