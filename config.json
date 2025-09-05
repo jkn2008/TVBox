@@ -130,7 +130,7 @@
          "type":0,
          "url":"https://raw.githubusercontent.com/mursor1985/LIVE/refs/heads/main/iptv.m3u",
          "timeout":10,
-        "header":{"User-Agent":"okHttp/Mod-1.2.0"}
+        "header":{"User-Agent":"okHttp/Mod-1.2.0.1"}
       },
       {
          "name":"咪咕直播",
