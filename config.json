@@ -66,12 +66,6 @@
          "api":"./py/py_jianpian.py"
       },
       {
-         "key":"嗷呜剧爸爸",
-         "name":"嗷呜剧爸爸",
-         "type":3,
-         "api":"./py/py_jubaba.py"
-      },
-      {
          "key":"Cori爱壹帆",
          "name":"Cori爱壹帆",
          "type":3,
