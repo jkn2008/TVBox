@@ -11,10 +11,10 @@
          "searchable":0
       },
       {
-         "key":"天堂影视",
-         "name":"天堂影视",
-         "type":1,
-         "api":"https://heimuer.ggff.net/api.php/tvbox"
+         "key":"电影天堂",
+         "name":"电影天堂",
+         "type":4,
+         "api":"https://tvbot.ggff.net/dytt"
       },
       {
          "key":"嗷呜小苹果",
@@ -64,6 +64,12 @@
          "name":"荐片",
          "type":3,
          "api":"./py/py_jianpian.py"
+      },
+      {
+         "key":"嗷呜剧爸爸",
+         "name":"嗷呜剧爸爸",
+         "type":3,
+         "api":"./py/py_jubaba.py"
       },
       {
          "key":"Cori爱壹帆",
