@@ -285,8 +285,9 @@ class Spider(Spider):
         pd = list(data('ul.ewave-content__playlist').items())
         n, p = [], []
         for i, x in enumerate(nd):
-            n.append(x.text())
-            p.append('#'.join([f"{j.text()}${j('a').attr('href')}" for j in pd[i]('li').items()]))
+            if '自营' in x.text():
+                n.append(x.text())
+                p.append('#'.join([f"{j.text()}${j('a').attr('href')}" for j in pd[i]('li').items()]))
         vod['vod_play_url'] = '$$$'.join(p)
         vod['vod_play_from'] = '$$$'.join(n)
         return {'list': [vod]}
