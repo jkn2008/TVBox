@@ -1,5 +1,4 @@
 {
-   "spider":"https://github.com/4TVBox/TVBox/raw/refs/heads/main/custom_spider.jar",
    "wallpaper":"https://深色壁纸.xxooo.cf/",
    "sites":[
       {
@@ -29,8 +28,8 @@
          "api":"https://tvbot.ggff.net/aigua"
       },
       {
-         "key":"霜辉月明瓜子",
-         "name":"霜辉月明瓜子",
+         "key":"月佬瓜子影视",
+         "name":"月佬瓜子影视",
          "type":4,
          "api":"https://tvbot.ggff.net/guazi"
       },
