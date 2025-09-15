@@ -3,6 +3,8 @@ import json
 import sys
 sys.path.append('..')
 from base.spider import Spider
+import requests
+
 class Spider(Spider):
     def init(self, extend=""):
         self.host = 'https://ev5356.970xw.com'
@@ -13,12 +15,15 @@ class Spider(Spider):
         self.ihost = self.imgsite()
         self.skey = ''
         self.stype = '3'
+
     def getName(self):
         return "JianPian"
+
     def imgsite(self):
-        data = self.fetch(f"{self.host}/api/appAuthConfig", headers=self.headers).json()
+        data = requests.get(f"{self.host}/api/appAuthConfig", headers=self.headers).json()
         host = data['data']['imgDomain']
         return f"https://{host}" if not host.startswith('http') else host
+
     def homeContent(self, filter):
         classes = [
             {'type_id': '1', 'type_name': '电影'},
@@ -51,24 +56,59 @@ class Spider(Spider):
                 ]}
             ],
             "2": [
-                # 电视剧过滤条件 (结构同电影)
+                {"key": "area", "name": "地區", "value": [
+                    {"v": "1", "n": "国产"}, {"v": "3", "n": "香港"}, {"v": "6", "n": "台湾"},
+                    {"v": "5", "n": "美国"}, {"v": "18", "n": "韩国"}, {"v": "2", "n": "日本"}
+                ]},
+                {"key": "year", "name": "年代", "value": [
+                    {"v": "107", "n": "2025"}, {"v": "119", "n": "2024"}, {"v": "153", "n": "2023"},
+                    {"v": "101", "n": "2022"}, {"v": "118", "n": "2021"}, {"v": "16", "n": "2020"},
+                    {"v": "7", "n": "2019"}, {"v": "2", "n": "2018"}, {"v": "3", "n": "2017"},
+                    {"v": "22", "n": "2016"}, {"v": "2015", "n": "2015以前"}
+                ]},
+                {"key": "sort", "name": "排序", "value": [
+                    {"v": "update", "n": "最新"}, {"v": "hot", "n": "最热"}, {"v": "rating", "n": "评分"}
+                ]}
             ],
             "3": [
-                # 动漫过滤条件 (结构同电影)
+                {"key": "area", "name": "地區", "value": [
+                    {"v": "1", "n": "国产"}, {"v": "3", "n": "香港"}, {"v": "6", "n": "台湾"},
+                    {"v": "5", "n": "美国"}, {"v": "18", "n": "韩国"}, {"v": "2", "n": "日本"}
+                ]},
+                {"key": "year", "name": "年代", "value": [
+                    {"v": "107", "n": "2025"}, {"v": "119", "n": "2024"}, {"v": "153", "n": "2023"},
+                    {"v": "101", "n": "2022"}, {"v": "118", "n": "2021"}, {"v": "16", "n": "2020"},
+                    {"v": "7", "n": "2019"}, {"v": "2", "n": "2018"}, {"v": "3", "n": "2017"},
+                    {"v": "22", "n": "2016"}, {"v": "2015", "n": "2015以前"}
+                ]},
+                {"key": "sort", "name": "排序", "value": [
+                    {"v": "update", "n": "最新"}, {"v": "hot", "n": "最热"}, {"v": "rating", "n": "评分"}
+                ]}
             ],
             "4": [
-                # 综艺过滤条件 (结构同电影)
+                {"key": "area", "name": "地區", "value": [
+                    {"v": "1", "n": "国产"}, {"v": "3", "n": "香港"}, {"v": "6", "n": "台湾"},
+                    {"v": "5", "n": "美国"}, {"v": "18", "n": "韩国"}, {"v": "2", "n": "日本"}
+                ]},
+                {"key": "year", "name": "年代", "value": [
+                    {"v": "107", "n": "2025"}, {"v": "119", "n": "2024"}, {"v": "153", "n": "2023"},
+                    {"v": "101", "n": "2022"}, {"v": "118", "n": "2021"}, {"v": "16", "n": "2020"},
+                    {"v": "7", "n": "2019"}, {"v": "2", "n": "2018"}, {"v": "3", "n": "2017"},
+                    {"v": "22", "n": "2016"}, {"v": "2015", "n": "2015以前"}
+                ]},
+                {"key": "sort", "name": "排序", "value": [
+                    {"v": "update", "n": "最新"}, {"v": "hot", "n": "最热"}, {"v": "rating", "n": "评分"}
+                ]}
             ]
         }
-        for tid in ["2", "3", "4"]:
-            filterObj[tid] = filterObj["1"].copy()
         return {
             'class': classes,
             'filters': filterObj
         }
+
     def homeVideoContent(self):
         url = f"{self.host}/api/slide/list?pos_id=88"
-        data = self.fetch(url, headers=self.headers).json()
+        data = requests.get(url, headers=self.headers).json()
         videos = [{
             'vod_id': item['jump_id'],
             'vod_name': item['title'],
@@ -77,6 +117,7 @@ class Spider(Spider):
             'style': json.dumps({"type": "rect", "ratio": 1.33})
         } for item in data['data']]
         return {'list': videos}
+
     def categoryContent(self, tid, pg, filter, extend):
         params = {
             'fcate_pid': tid,
@@ -88,7 +129,7 @@ class Spider(Spider):
             'sort': extend.get('sort', '')
         }
         url = f"{self.host}/api/crumb/list"
-        data = self.fetch(url, params=params, headers=self.headers).json()
+        data = requests.get(url, params=params, headers=self.headers).json()
         videos = [{
             'vod_id': item['id'],
             'vod_name': item['title'],
@@ -103,18 +144,23 @@ class Spider(Spider):
             'limit': 15,
             'total': 99999
         }
+
     def detailContent(self, ids):
         id = ids[0]
         url = f"{self.host}/api/video/detailv2?id={id}"
-        data = self.fetch(url, headers=self.headers).json()
+        data = requests.get(url, headers=self.headers).json()
         res = data['data']
-        play_from = []
+        
+        play_from = ['边下边播']
         play_url = []
+        
+        # 寻找并处理“常规线路”
         for source in res.get('source_list_source', []):
-            play_from.append(source['name'].replace('常规线路', '边下边播'))
-            parts = [f"{part.get('source_name', part.get('weight', ''))}${part['url']}"
-                    for part in source.get('source_list', [])]
-            play_url.append('#'.join(parts))
+            if source['name'] == '常规线路':
+                parts = [f"{part.get('source_name', part.get('weight', ''))}${part['url']}" for part in source.get('source_list', [])]
+                play_url.append('#'.join(parts))
+                break  # 找到后立即退出循环
+        
         vod = {
             'vod_id': id,
             'type_name': '/'.join([t['name'] for t in res.get('types', [])]),
@@ -126,15 +172,17 @@ class Spider(Spider):
             'vod_play_url': '$$$'.join(play_url)
         }
         return {'list': [vod]}
+
     def playerContent(self, flag, id, vipFlags):
         if ".m3u8" in id:
             return {'parse': 0, 'url': id}
         else:
             return {'parse': 0, 'url': f"tvbox-xg:{id}"}
+
     def searchContent(self, key, quick, pg="1"):
         url = f"{self.host}/api/v2/search/videoV2"
         params = {'key': key, 'category_id': 88, 'page': pg, 'pageSize': 20}
-        data = self.fetch(url, params=params, headers=self.headers).json()
+        data = requests.get(url, params=params, headers=self.headers).json()
         videos = [{
             'vod_id': item['id'],
             'vod_name': item['title'],
@@ -146,6 +194,7 @@ class Spider(Spider):
             'list': videos,
             'limit': 20
         }
+
     def isVideoFormat(self, url): pass
     def manualVideoCheck(self): pass
     def destroy(self): pass
