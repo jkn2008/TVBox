@@ -70,6 +70,12 @@
          "api":"./py/py_jubaba.py"
       },
       {
+         "key":"恰逢永乐",
+         "name":"恰逢永乐",
+         "type":4,
+         "api":"https://tvbot.ggff.net/yongle"
+      },
+      {
          "key":"Cori爱壹帆",
          "name":"Cori爱壹帆",
          "type":3,
@@ -126,6 +132,18 @@
       {
          "name":"咪咕直播",
          "url":"https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt"
+      },
+      {
+         "name":"169全球直播",
+         "url":"https://miracle.hz.cz/live/169_latest.txt"
+      },
+      {
+         "name":"秘密花园",
+         "type":0,
+         "url":"https://gitee.com/sji820/des/raw/master/0.jpg",
+         "playerType":1,
+         "epg":"http://diyp5.112114.xyz/?ch={name}&date={date}",
+         "logo":"http://diyp5.112114.xyz/{name}.png"
       },
       {
          "name":"BeeSport直播",
