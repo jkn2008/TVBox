@@ -16,10 +16,10 @@
          "api":"https://tvbot.ggff.net/dytt"
       },
       {
-         "key":"嗷呜小苹果",
-         "name":"嗷呜小苹果",
+         "key":"月佬瓜子影视",
+         "name":"月佬瓜子影视",
          "type":4,
-         "api":"https://tvbot.ggff.net/pingguo"
+         "api":"https://tvbot.ggff.net/guazi"
       },
       {
          "key":"嗷呜爱瓜TV",
@@ -28,10 +28,10 @@
          "api":"https://tvbot.ggff.net/aigua"
       },
       {
-         "key":"月佬瓜子影视",
-         "name":"月佬瓜子影视",
+         "key":"嗷呜小苹果",
+         "name":"嗷呜小苹果",
          "type":4,
-         "api":"https://tvbot.ggff.net/guazi"
+         "api":"https://tvbot.ggff.net/pingguo"
       },
       {
          "key":"嗷呜金牌影院",
