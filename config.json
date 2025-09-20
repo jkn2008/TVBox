@@ -66,8 +66,8 @@
       {
          "key":"嗷呜剧爸爸",
          "name":"嗷呜剧爸爸",
-         "type":3,
-         "api":"./py/py_jubaba.py"
+         "type":4,
+         "api":"https://tvbot.ggff.net/jubaba"
       },
       {
          "key":"恰逢永乐",
@@ -134,8 +134,8 @@
          "url":"https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt"
       },
       {
-         "name":"169全球直播",
-         "url":"https://miracle.hz.cz/live/169_latest.txt"
+         "name":"Gather直播",
+         "url":"https://tv.iill.top/m3u/Gather"
       },
       {
          "name":"秘密花园",
@@ -153,7 +153,7 @@
             
          },
          "header":{
-            "Referer":"https://p.m82xg4z0cdbz7.com/"
+            "Referer":"https://p.lioncdn.net/"
          }
       }
    ],
