@@ -22,6 +22,12 @@
          "api":"https://tvbot.ggff.net/guazi"
       },
       {
+         "key":"Qile优视频",
+         "name":"Qile优视频",
+         "type":4,
+         "api":"https://tvbot.ggff.net/uvod"
+      },
+      {
          "key":"嗷呜爱瓜TV",
          "name":"嗷呜爱瓜TV",
          "type":4,
@@ -34,16 +40,10 @@
          "api":"https://tvbot.ggff.net/pingguo"
       },
       {
-         "key":"嗷呜金牌影院",
-         "name":"嗷呜金牌影院",
-         "type":3,
-         "api":"./py/py_jinpai.py"
-      },
-      {
-         "key":"Qile优视频",
-         "name":"Qile优视频",
+         "key":"独播库",
+         "name":"独播库",
          "type":4,
-         "api":"https://tvbot.ggff.net/uvod"
+         "api":"https://tvbot.ggff.net/duboku"
       },
       {
          "key":"欧乐影院",
@@ -52,16 +52,16 @@
          "api":"https://tvbot.ggff.net/oule"
       },
       {
-         "key":"独播库",
-         "name":"独播库",
-         "type":4,
-         "api":"https://tvbot.ggff.net/duboku"
-      },
-      {
          "key":"荐片",
          "name":"荐片",
          "type":4,
          "api":"https://tvbot.ggff.net/jianpian"
+      },
+      {
+         "key":"嗷呜金牌影院",
+         "name":"嗷呜金牌影院",
+         "type":3,
+         "api":"./py/py_jinpai.py"
       },
       {
          "key":"嗷呜剧爸爸",
@@ -130,12 +130,29 @@
    ],
    "lives":[
       {
+         "name":"冰茶直播",
+         "type":0,
+         "url":"https://fy.188766.xyz/?ip=&mishitong=true&json=true",
+         "ua":"bingcha/1.1"
+      },
+      {
          "name":"咪咕直播",
          "url":"https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt"
       },
       {
          "name":"Gather直播",
          "url":"https://tv.iill.top/m3u/Gather"
+      },
+      {
+         "name":"BeeSport直播",
+         "type":3,
+         "api":"https://tvbot.dpdns.org/live_beesports.py",
+         "ext":{
+            
+         },
+         "header":{
+            "Referer":"https://p.lioncdn.net/"
+         }
       },
       {
          "name":"秘密花园",
@@ -146,16 +163,40 @@
          "logo":"http://diyp5.112114.xyz/{name}.png"
       },
       {
-         "name":"BeeSport直播",
-         "type":3,
-         "api":"./py/live_beesports.py",
-         "ext":{
-            
-         },
+         "name":"备用直播一",
+         "type":0,
+         "url":"https://raw.githubusercontent.com/PizazzGY/TV/master/output/user_result.txt",
+         "epg":"http://cdn.1678520.xyz/epg/?ch={name}&date={date}",
+         "timeout":10
+      },
+      {
+         "name":"备用直播二",
+         "type":0,
+         "url":"https://raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.m3u",
+         "epg":"http://cdn.1678520.xyz/epg/?ch={name}&date={date}",
+         "timeout":10
+      }
+   ],
+   "headers":[
+      {
+         "host":"hlsztemgsplive.miguvideo.com",
          "header":{
-            "Referer":"https://p.lioncdn.net/"
+            "User-Agent":"bingcha/1.1"
          }
       }
+   ],
+   "proxy":[
+      "raw.githubusercontent.com"
+   ],
+   "hosts":[
+      "hlsztemgsplive.miguvideo.com=hlsztemgsplive.miguvideo.com.b.cdn.chinamobile.com",
+      "push-rtmp-hs-spe-f5.douyincdn.com=source-fcdn-spe-push.s.bytefcdn.com",
+      "cdn9.163189.xyz=gcore.jsdelivr.net",
+      "cache.ott.fifalive.itv.cmvideo.cn=cache.ott.fifalive.itv.cmvideo.cn.e.cdn.chinamobile.com",
+      "studentlive.migucloud.com=base-v4v6-miguvideo.e.cdn.chinamobile.com"
+   ],
+   "ads":[
+      "static-mozai.4gtv.tv"
    ],
    "doh":[
       {
