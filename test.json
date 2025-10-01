@@ -1,22 +1,152 @@
 [
-{
-    "id": "t4-OleVod",
-    "name": "欧乐影院(T4)",
-    "api": "https://py.doube.eu.org/spider?site=OleVod",
-    "nsfw": false,
-    "type": 1,
-    "extra": {
-      "template": "t4"
-    }
-},
-{
-    "id": "t4-duboku",
-    "name": "独播库(T4)",
-    "api": "https://tvbot.ggff.net/duboku",
-    "nsfw": false,
-    "type": 1,
-    "extra": {
-      "template": "t4"
-    }
-}
+   {
+      "id":"t4-dytt",
+      "name":"电影天堂",
+      "api":"https://tvbot.ggff.net/dytt",
+      "nsfw":false,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-guazi",
+      "name":"月佬瓜子影视",
+      "api":"https://tvbot.ggff.net/guazi",
+      "nsfw":false,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-uvod",
+      "name":"Qile优视频",
+      "api":"https://tvbot.ggff.net/uvod",
+      "nsfw":false,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-aigua",
+      "name":"嗷呜爱瓜TV",
+      "api":"https://tvbot.ggff.net/aigua",
+      "nsfw":false,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-pingguo",
+      "name":"嗷呜小苹果",
+      "api":"https://tvbot.ggff.net/pingguo",
+      "nsfw":false,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-duboku",
+      "name":"独播库",
+      "api":"https://tvbot.ggff.net/duboku",
+      "nsfw":false,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-oule",
+      "name":"欧乐影院",
+      "api":"https://tvbot.ggff.net/oule",
+      "nsfw":false,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-jubaba",
+      "name":"嗷呜剧爸爸",
+      "api":"https://tvbot.ggff.net/jubaba",
+      "nsfw":false,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-yongle",
+      "name":"恰逢永乐",
+      "api":"https://tvbot.ggff.net/yongle",
+      "nsfw":false,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-dm84",
+      "name":"沐辰动漫巴士",
+      "api":"https://py.doube.eu.org/spider?site=Dm84",
+      "nsfw":false,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-badnews",
+      "name":"沐辰BadNews",
+      "api":"https://py.doube.eu.org/spider?site=BadNews",
+      "nsfw":true,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-miss",
+      "name":"沐辰MissAV",
+      "api":"https://py.doube.eu.org/spider?site=Miss",
+      "nsfw":true,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-aidou",
+      "name":"沐辰AiDou",
+      "api":"https://py.doube.eu.org/spider?site=AiDou",
+      "nsfw":true,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-mrjav",
+      "name":"沐辰MRJav",
+      "api":"https://py.doube.eu.org/spider?site=MrJav",
+      "nsfw":true,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   },
+   {
+      "id":"t4-madou",
+      "name":"沐辰麻豆",
+      "api":"https://py.doube.eu.org/spider?site=MaDou",
+      "nsfw":true,
+      "type":1,
+      "extra":{
+         "template":"t4"
+      }
+   }
 ]
