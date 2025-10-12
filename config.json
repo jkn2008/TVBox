@@ -116,16 +116,6 @@
             }
          },
          "jar":"https://github.com/CatVodSpider-GM/SFW-Spiders/raw/refs/heads/main/Spiders-Lib/GM.jar"
-      },
-      {
-         "key":"老张直播频道",
-         "name":"老张直播频道",
-         "type":4,
-         "api":"http://zhangqun66.com/zh/2241-2.php",
-         "searchable":0,
-         "quickserch":0,
-         "changeable":0,
-         "ext":"1,2,3"
       }
    ],
    "lives":[
@@ -144,37 +134,8 @@
          "url":"https://tv.iill.top/m3u/Gather"
       },
       {
-         "name":"BeeSport直播",
-         "type":3,
-         "api":"https://tvbot.dpdns.org/live_beesports.py",
-         "ext":{
-            
-         },
-         "header":{
-            "Referer":"https://p.lioncdn.net/"
-         }
-      },
-      {
-         "name":"秘密花园",
-         "type":0,
-         "url":"https://mmhy.zzong6599.workers.dev/",
-         "playerType":1,
-         "epg":"http://diyp5.112114.xyz/?ch={name}&date={date}",
-         "logo":"http://diyp5.112114.xyz/{name}.png"
-      },
-      {
-         "name":"备用直播一",
-         "type":0,
-         "url":"https://raw.githubusercontent.com/PizazzGY/TV/master/output/user_result.txt",
-         "epg":"http://cdn.1678520.xyz/epg/?ch={name}&date={date}",
-         "timeout":10
-      },
-      {
-         "name":"备用直播二",
-         "type":0,
-         "url":"https://raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.m3u",
-         "epg":"http://cdn.1678520.xyz/epg/?ch={name}&date={date}",
-         "timeout":10
+         "name":"BeeSports直播",
+         "url":"./tv.m3u"
       }
    ],
    "headers":[
