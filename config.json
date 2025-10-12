@@ -10,10 +10,10 @@
          "searchable":0
       },
       {
-         "key":"电影天堂",
-         "name":"电影天堂",
+         "key":"沐辰电影天堂",
+         "name":"沐辰电影天堂",
          "type":4,
-         "api":"https://newtv.ggff.net/dytt"
+         "api":"https://py.doube.eu.org/spider?site=DianYingTanTang"
       },
       {
          "key":"月佬瓜子影视",
